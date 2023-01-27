@@ -10,15 +10,18 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
     private static final String[] CAMERA_PERMISSION = new String[]{Manifest.permission.CAMERA};
     private static final int CAMERA_REQUEST_CODE = 10;
+    public static ImageView imageView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button enableCamera = findViewById(R.id.enableCamera);
+        imageView = findViewById(R.id.imageView);
         enableCamera.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View v) {

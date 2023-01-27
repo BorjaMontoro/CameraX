@@ -10,15 +10,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-        <TextView
+
+        <ImageView
+            android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="500dp"
-            android:id="@+id/container"
-            android:textSize="20sp"
-            android:layout_gravity="center"
-            android:text="This is a CameraX test app!"
-            android:gravity="center">
-        </TextView>
+            android:layout_height="527dp"
+            app:srcCompat="?attr/selectableItemBackgroundBorderless" />
 
         <Button
             android:id="@+id/enableCamera"
@@ -26,6 +23,7 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="Open Camera" />
+
     </LinearLayout>
 
 
